@@ -27,6 +27,7 @@ export class LoginComponent {
   }
 
   onSubmit() {
+    debugger;
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.value).subscribe({
         next: (response) => {
@@ -34,6 +35,7 @@ export class LoginComponent {
           this.router.navigate(['/home']);
         },
         error: (err) => {
+          debugger;
           console.error('Erro no login', err);
           alert('Erro ao fazer login. Verifique suas credenciais.');
         }
