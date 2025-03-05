@@ -12,7 +12,7 @@ Este projeto é uma aplicação Angular que consome um backend em .NET com auten
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/subscriptions.git
+   git clone https://github.com/guilhermebernava/subscriptions.git
    cd subscriptions
    ```
 2. Instale as dependências:
