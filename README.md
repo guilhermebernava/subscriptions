@@ -12,8 +12,8 @@ Este projeto é uma aplicação Angular que consome um backend em .NET com auten
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-repositorio.git
-   cd seu-projeto-angular
+   git clone https://github.com/subscriptions.git
+   cd subscriptions
    ```
 2. Instale as dependências:
    ```sh
@@ -23,6 +23,6 @@ Este projeto é uma aplicação Angular que consome um backend em .NET com auten
 ## Executando o Projeto
 Para rodar a aplicação localmente, utilize o seguinte comando:
 ```sh
-ng run start
+npm run start
 ```
 Acesse no navegador: `http://localhost:4200`
