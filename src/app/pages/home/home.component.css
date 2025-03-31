@@ -1,14 +1,81 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%; 
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
 .home-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+button[color="primary"] {
+  background: var(--primary-color);
+  color: white;
+}
+
+button[color="primary"]:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}
+
+button[color="accent"] {
+  background: var(--secondary-color);
+  color: white;
+}
+
+button[color="accent"]:hover {
+  background: #ff9800;
+  transform: scale(1.05);
+}
+
+button:last-child {
+  margin-top: 15px;
+  background: #ff4b4b;
+  color: white;
+}
+
+button:last-child:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}

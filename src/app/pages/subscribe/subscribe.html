@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>Enviar Email</h2>
+    <select [(ngModel)]="selectedTemplate">
+      <option *ngFor="let template of templates" [value]="template.id">{{ template.name }}</option>
+    </select>
+    <input [(ngModel)]="email" placeholder="Digite o email" type="email">
+    <button mat-raised-button color="primary" (click)="sendEmail()">Enviar</button>
+  <button (click)="backToHome()">Sair</button>
+  </div>

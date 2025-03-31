@@ -17,4 +17,12 @@ export class HomeComponent {
     this.authService.logout();
     this.router.navigate(['/']);
   }
+
+  createTemplate() {
+    this.router.navigate(['/create-template']);
+  }
+
+  subscribe() {
+    this.router.navigate(['/subscribe']);
+  }
 }

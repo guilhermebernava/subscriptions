@@ -1,0 +1,59 @@
+/* Definição do tema escuro */
+:root {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --primary-color: #ff7e5f;
+    --button-hover: #ff5f50;
+}
+
+/* Aplica o fundo escuro para toda a aplicação */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estiliza os contêineres */
+.container {
+    background: var(--container-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estiliza o textarea */
+textarea {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Placeholder */
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estiliza os botões */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+}

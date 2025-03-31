@@ -27,8 +27,9 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    debugger;
+    this.router.navigate(['/home']);
     if (this.loginForm.valid) {
+
       this.authService.login(this.loginForm.value).subscribe({
         next: (response) => {
           localStorage.setItem('token', response.token);
